@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Set up Client Credentials
+## the new changes on done
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id='164b8387284f4886877a2bac6fa4068b',  # Replace with your Client ID
     client_secret='7e9ce6c824cf4e478be2aa2e719ae136'  # Replace with your Client Secret
@@ -53,4 +54,5 @@ plt.figure(figsize=(8, 5))
 plt.bar(features, values, color='skyblue', edgecolor='black')
 plt.title(f"Track Metadata for '{track_data['Track Name']}'")
 plt.ylabel('Value')
+
 plt.show()
